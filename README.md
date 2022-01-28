@@ -1,5 +1,5 @@
-# AWS Lambda Custom Runtime based on minimal Java 17 JRE
-An AWS Lambda custom runtime to enable Java 17 support on a minimalistic JRE, which only includes the Java modules required by this function.
+# AWS Lambda Custom Runtime based on minimal Java 18 JRE (OpenJDK)
+An AWS Lambda custom runtime to enable Java 18 support on a minimalistic JRE, which only includes the Java modules required by this function.
 
 ## Getting started
 
