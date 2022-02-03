@@ -30,17 +30,6 @@ ENV PATH=$PATH:$M2_HOME/bin
 # OS name: "linux", version: "5.10.76-linuxkit", arch: "amd64", family: "unix"
 RUN mvn -v
 
-# RUN git clone https://github.com/aws/aws-lambda-java-libs.git
-# RUN cd aws-lambda-java-libs
-
-# Make sure we use a know version, as we don't have a Git tag we can use
-# RUN git reset --hard 6785d0923b214fe6a1ab3027a83432bf9dbde208
-
-# Compile the Lambda Java RIC
-# RUN cd aws-lambda-java-runtime-interface-client
-# RUN mvn clean package -DskipTests
-
-
 # Copy the software folder to the image and build the function
 COPY software software
 WORKDIR /software/example-function

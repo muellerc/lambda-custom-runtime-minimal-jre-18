@@ -7,7 +7,7 @@ rm runtime.zip
 #   1. use the latest Amazon Linux 2 image and install an early access version of OpenJDK 18
 #   2. copy the software directory into the Docker container and run the build using Maven, which create an uber jar
 #   3. run jdeps to calculate the module dependencies for this uber jar
-#   4. feeding the jdeps result into jlink, creating a minimal Java 17 JRE which only contains the necessary modules to run this jar
+#   4. feeding the jdeps result into jlink, creating a minimal Java 18 JRE which only contains the necessary modules to run this jar
 #   5. create the runtime.zip archive, based on the AWS Lambda custom runtime specification
 docker build --progress=plain -t lambda-custom-runtime-minimal-jre-18 .
 
